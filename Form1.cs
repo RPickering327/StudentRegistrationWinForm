@@ -100,7 +100,7 @@ namespace StudentManagementWF
         {
 
             //Get user input
-            var studentId = StudentIdTxtBox.Text;  
+            var studentId = StudentIdTxtBox.Text;
             var studentGrade = StudentGradeTxtBox.Text;
 
             //Validate user input
@@ -130,6 +130,7 @@ namespace StudentManagementWF
             CourseName.Clear();
             MinGrade.Clear();
         }
+
 
     }
 }

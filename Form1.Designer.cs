@@ -43,6 +43,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.UpdateGradeBtn = new System.Windows.Forms.Button();
+            this.StudentGradeTxtBox = new System.Windows.Forms.TextBox();
+            this.StudentIdTxtBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,21 +64,15 @@
             this.viewAllStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.StudentIdTxtBox = new System.Windows.Forms.TextBox();
-            this.StudentGradeTxtBox = new System.Windows.Forms.TextBox();
-            this.UpdateGradeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // FirstName
@@ -226,6 +226,65 @@
             this.dataGridView2.Size = new System.Drawing.Size(872, 271);
             this.dataGridView2.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.UpdateGradeBtn);
+            this.tabPage3.Controls.Add(this.StudentGradeTxtBox);
+            this.tabPage3.Controls.Add(this.StudentIdTxtBox);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(872, 289);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Update Grades";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // UpdateGradeBtn
+            // 
+            this.UpdateGradeBtn.Location = new System.Drawing.Point(210, 91);
+            this.UpdateGradeBtn.Name = "UpdateGradeBtn";
+            this.UpdateGradeBtn.Size = new System.Drawing.Size(138, 59);
+            this.UpdateGradeBtn.TabIndex = 20;
+            this.UpdateGradeBtn.Text = "Update grade";
+            this.UpdateGradeBtn.UseVisualStyleBackColor = true;
+            this.UpdateGradeBtn.Click += new System.EventHandler(this.UpdateGradeBtn_Click);
+            // 
+            // StudentGradeTxtBox
+            // 
+            this.StudentGradeTxtBox.Location = new System.Drawing.Point(174, 54);
+            this.StudentGradeTxtBox.Name = "StudentGradeTxtBox";
+            this.StudentGradeTxtBox.Size = new System.Drawing.Size(174, 31);
+            this.StudentGradeTxtBox.TabIndex = 9;
+            // 
+            // StudentIdTxtBox
+            // 
+            this.StudentIdTxtBox.Location = new System.Drawing.Point(174, 16);
+            this.StudentIdTxtBox.Name = "StudentIdTxtBox";
+            this.StudentIdTxtBox.Size = new System.Drawing.Size(174, 31);
+            this.StudentIdTxtBox.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 28);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Student grade:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(124, 28);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Student Id:";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -360,65 +419,6 @@
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.UpdateGradeBtn);
-            this.tabPage3.Controls.Add(this.StudentGradeTxtBox);
-            this.tabPage3.Controls.Add(this.StudentIdTxtBox);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Location = new System.Drawing.Point(4, 32);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(872, 289);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Update Grades";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 28);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Student Id:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 28);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Student grade:";
-            // 
-            // StudentIdTxtBox
-            // 
-            this.StudentIdTxtBox.Location = new System.Drawing.Point(174, 16);
-            this.StudentIdTxtBox.Name = "StudentIdTxtBox";
-            this.StudentIdTxtBox.Size = new System.Drawing.Size(174, 31);
-            this.StudentIdTxtBox.TabIndex = 8;
-            // 
-            // StudentGradeTxtBox
-            // 
-            this.StudentGradeTxtBox.Location = new System.Drawing.Point(174, 54);
-            this.StudentGradeTxtBox.Name = "StudentGradeTxtBox";
-            this.StudentGradeTxtBox.Size = new System.Drawing.Size(174, 31);
-            this.StudentGradeTxtBox.TabIndex = 9;
-            // 
-            // UpdateGradeBtn
-            // 
-            this.UpdateGradeBtn.Location = new System.Drawing.Point(210, 91);
-            this.UpdateGradeBtn.Name = "UpdateGradeBtn";
-            this.UpdateGradeBtn.Size = new System.Drawing.Size(138, 59);
-            this.UpdateGradeBtn.TabIndex = 20;
-            this.UpdateGradeBtn.Text = "Update grade";
-            this.UpdateGradeBtn.UseVisualStyleBackColor = true;
-            this.UpdateGradeBtn.Click += new System.EventHandler(this.UpdateGradeBtn_Click);
-            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,12 +453,12 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

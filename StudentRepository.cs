@@ -84,6 +84,8 @@ namespace StudentManagementWF
         }
 
 
+
+
         // Displays all the students in the table on the first screen into the datagrid view
         public DataTable DisplayStudentsByType(string studentType)
         {
